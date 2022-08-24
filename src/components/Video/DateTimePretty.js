@@ -1,6 +1,6 @@
 import React from "react";
 
-function dateTimePretty(Component) {
+function DateTimePretty(Component) {
   class DateTimePretty extends React.Component {
     render() {
       return <Component date={formatTimeStamp(this.props.date)} />;
@@ -119,4 +119,4 @@ function getDisplayName(WrappedComponent) {
 }
 
 
-export default dateTimePretty;
+export default DateTimePretty;

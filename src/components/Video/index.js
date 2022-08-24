@@ -1,14 +1,14 @@
 import { nanoid } from "nanoid";
 import React from "react";
-import dateTimePretty from "./DateTimePretty";
-import "./Video.css";
+import DateTimePretty from "./DateTimePretty";
+import "./index.css";
 
 export function DateTime(props) {
   return <p className="date">{props.date}</p>
 }
 
 export function Video(props) {
-  const DatePrettied = dateTimePretty(DateTime);
+  const DatePrettied = DateTimePretty(DateTime);
   return (
     <div className="video">
       <iframe
